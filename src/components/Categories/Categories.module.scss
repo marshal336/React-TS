@@ -1,0 +1,80 @@
+.root {
+  min-width: 320px;
+  border-radius: 6px;
+  background: #191919;
+  padding: 25px;
+  @media (max-width: 801px) {
+    min-width: 240px;
+    padding: 15px;
+  }
+  .addArrow {
+    display: flex;
+    gap: 30px;
+    .title {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding-bottom: 35px;
+      @media (max-width: 801px) {
+        padding-bottom: 20px;
+      }
+    }
+    .iconArrow {
+      display: none;
+      color: #fff;
+      transition: 0.5s;
+      @media (max-width: 801px) {
+        display: block;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .categoriesMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 116px;
+    @media (max-width: 801px) {
+      display: none;
+      padding-bottom: 50px;
+    }
+    .liElem {
+      a {
+        color: #576067;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .active {
+      a {
+        color: #8b57c6;
+      }
+    }
+  }
+  .addition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .help {
+      color: #576067;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .helpTwo {
+      color: #576067;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+  .activeMenu {
+    .iconArrow {
+      display: block;
+      transform: rotate(0);
+    }
+  }
+  .activeClick {
+    display: flex;
+  }
+}
+

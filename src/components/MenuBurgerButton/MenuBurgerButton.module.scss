@@ -1,0 +1,37 @@
+.root {
+  display: none;
+  width: 50px;
+  height: 19px;
+  @media (max-width: 750px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  position: relative;
+  .item {
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transition: 1s;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+    }
+  }
+  .active {
+    &:nth-child(1) {
+      top: 9px;
+      transform: rotate(225deg);
+    }
+    &:nth-child(2) {
+      transform: scale(0);
+    }
+    &:nth-child(3) {
+      bottom: 9px;
+      transform: rotate(-225deg);
+    }
+  }
+}

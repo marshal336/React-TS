@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    img{
+        max-width: 100%;
+    }
+}
+body{
+    background: #212123;
+    font-family: 'Montserrat';
+    .paddingNone{
+        padding: 0;
+    }
+}
+
+
+

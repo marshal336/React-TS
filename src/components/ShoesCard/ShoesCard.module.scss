@@ -1,0 +1,68 @@
+.root {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 8px;
+  background: #212123;
+  .logo {
+    width: 98px;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .info {
+    position: relative;
+    left: -120px;
+    .title {
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .subTitle {
+      color: #b8b8b8;
+      font-size: 10px;
+      font-weight: 500;
+    }
+  }
+  .count {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .minus {
+      border-radius: 6px;
+      background: #576067;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background: #6c3eb8;
+      }
+    }
+    .plus {
+      border-radius: 6px;
+      background: #576067;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        background: #6c3eb8;
+      }
+    }
+  }
+  .delete {
+    cursor: pointer;
+  }
+}
